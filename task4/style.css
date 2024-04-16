@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e3e3e3;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background-color: #233142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    cursor: default;
+    text-decoration: none;
+}
+.navbar a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-left: 4rem;
+    transition: .3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #c3195d;
+}
+#menu{
+    font-size: 25px;
+    color: white;
+    display: none;
+    margin-left: 50px;
+}
+section{
+    min-height: 100hv;
+    padding: 10rem 9% 2rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #233142;
+}
+.home-content h1{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #233142;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.home-content p{
+    font-size: 16px;
+}
+.home-image img{
+    width: 32vw;
+    margin-left: 150px;
+}
+span{
+    color: #c3195d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.socialMedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin: 100px 5px 50px 5px;
+    color: #233142;
+}
+.socialMedia a:hover{
+    color: #c3195d;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c3195d;
+    color: white;
+    border-radius: 50px;
+    box-sizing: 0 0 1rem #c3195d;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.btn:hover{
+    background-color: #9b003e;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about-img img{
+    width: 30vw;
+    margin-top: 100px;
+}
+.about-containt{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 35px;
+}
+.about-containt h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-containt h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about-containt p{
+    font-size: 20px;
+    margin: 20px 0 30px;
+}
+.services h1{
+    margin-top: 100px;
+    margin-bottom: 55px;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 85px;
+}
+.service-container .service-box{
+    flex: 2 2 20rem;
+    background-color: #233142;
+    padding: 3rem 2rem 4rem;
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid #e3e3e3;
+    color: white;
+}
+.service-container .service-box:hover{
+    border-color: #c3195d;
+    transform: scale(1.02);
+    transition: .5s ease;
+}
+.service-box h3{
+    font-size: 25px;
+}
+.service-box p{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .projectbox{
+    position: relative;
+    border-radius: 20px;
+    box-sizing: 0 0 1rem #233142;
+    overflow: hidden;
+    display: flex;
+}
+.projectbox .layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .1), #c3195d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.projectbox:hover .layer{
+    transform: translateY(0);
+}
+
+.layer h4{
+    font-size: 26px;
+}
+.layer p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #233142;
+    border-radius: 50%;
+}
+.layer a i{
+    font-size: 20px;
+    color: white;
+}
+.projects h2{
+    margin-bottom: 50px;
+}
+
+.projectbox img{
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+}
+.projectbox:hover img{
+    transform: scale(1.1);
+}
+.skils{
+    margin-top: 120px;
+}
+.skils-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 80px;
+}
+.skils-container .skil-box{
+    background-color: #233142;
+    color: white;
+    padding: 20px;
+    flex: 1 1 30rem;
+}
+.skil-box{
+    text-align: center;
+}
+#skil-logo{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.skil-box h2{
+    font-size: 25px;
+}
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact form{
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #233142;
+    border-radius: 5px;
+    margin: 4px 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 9%;
+    background-color: #233142;
+}
+
+.footer-text p{
+    font-size: 20px;
+    color: white;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: #c3195d;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #233142;
+}
+.footer-iconTop a i{
+    font-size: 22px;
+    color: white; 
+}
+
+@media (max-width: 570px) {
+    .logo{
+        font-size: 20px;
+        right: 0;
+        left: 0;
+    }
+    #menu{
+        margin-right: 10%;
+    }
+    .about-containt p{
+        font-size: 18px;
+        margin: 10px 0 15px;
+    }
+    .about-containt h2{
+        text-align: center;
+        line-height: 1;
+    }
+    .about-containt h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .btn{
+        font-size: small;
+    }
+    .heading{
+        font-size: 23px;
+    }
+}
+@media (max-width: 610px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        min-width: auto;
+    }
+    .logo{
+        margin-left: 10%;
+    }
+    #menu{
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1045px) {
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #233142;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 20px;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 695px){
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-image img{
+        width: 70vw;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        margin-bottom: 3rem;
+    }
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
